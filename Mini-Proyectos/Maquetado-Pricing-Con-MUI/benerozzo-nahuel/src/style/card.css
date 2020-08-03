@@ -1,0 +1,28 @@
+.titleCard{
+    background: #eeeeee;
+    width: 100%;
+}
+.inline-block{
+    display: inline-block;
+}
+.decNone{
+    list-style: none;
+    text-decoration: none;
+}
+.card{
+    max-width: 25%;
+}
+.buttonCard{
+    color: #8bbae8;
+    
+}
+.pd-0{
+    padding: 0%;
+}
+.priceCard{
+    text-align: center;
+}
+.proCardButton{
+    background: #1976d2;
+    color: white;
+}

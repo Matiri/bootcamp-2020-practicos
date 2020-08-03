@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin-top: 50px;
+}
+ul{
+  padding: 0;
+}
+.cardHeader{
+  background-color: #eeeeee
+}
+.cardContainer{
+  padding: 0;
+}
+h1{
+  color: black;
+}
+.App {
+  padding: 75px 0px 55px 0px;
+  margin-left: 15%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.cardsContainer{
+  display: flex;
+  flex-direction: row;
+}
+.footerColContainer{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+footer{
+  margin-top: 75px;
+  border-top: 1px solid #e0e0e0;
+  max-width: 958px;
+}
+li{
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  list-style-type: none;
+}
+ul{
+  
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+}
+a:hover{
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.54);
+}
+.mainHeader{
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #d7d7d7;
+}
+.headerBtnContainer{
+  position: absolute;
+  right: 25px;
+}
+.headerTitle{
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+.contentSubtitle{
+  max-width: 600px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0em;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contentTitle{
+  font-size: 3.75rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+  margin-bottom: 25px;
+}
+.footerCopy{
+  color: rgba(0, 0, 0, 0.54);
+}
+.cardContentPrice{
+  margin-top: 25px;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.167;
+  letter-spacing: 0em;
+}
+.cardContentPriceMonth{
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.cardHeaderTitle{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+.cardBtn{
+  width: 100%;
+}
+.cardHeaderImg{
+  position: absolute;
+}
+.cardContent{
+  padding: 0px 24px 0px 24px
+}
+.cardHeader{
+  height: 80px;
+}
+.cardContainer{
+  width: 327px;
+}
+.cardFree{
+  margin-right: 40px;
+}
+.cardPro{
+  margin-right: 40px;
+}
+.MuiCard-root{
+  padding: 0px;
+}
+.MuiCard-root:last-child{
+  padding: 0px;
+}

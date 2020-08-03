@@ -1,0 +1,14 @@
+.button__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* BOX */
+    width: 400px;
+    height: 400px;
+    border: 1px solid #f50057;
+    border-radius: 20px;
+}
+p{
+    font-weight: bold;
+}

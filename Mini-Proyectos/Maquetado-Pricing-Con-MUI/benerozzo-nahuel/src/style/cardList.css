@@ -1,0 +1,21 @@
+.cardListUl{
+    max-width: 25%;
+    list-style: none;
+    text-align: center;
+}
+.cardListContent{
+    display: inline-block;
+    max-width: 25%;
+}
+.cardListTitle{
+max-width: 25%;
+}
+.linkDecNone{
+    text-decoration: none;
+}
+.linkDecNone:hover{
+    cursor: pointer;
+}
+.ulContent{
+    max-width: 25%;
+}
