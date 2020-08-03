@@ -1,0 +1,44 @@
+.Card__main-div {
+    display: inline;
+}
+.Card__first-div, .Card__second-div {
+    width: 250px;
+    border: 0px solid black;
+    border-radius: 5px;
+} 
+.Card__first-div {
+    background-color: rgb(255, 243, 230, 0.5);
+}
+.Card__second-div {
+    box-shadow: 0px 1px rgb(0, 0,  0, 0.6);
+}
+.Card__title {
+    padding-top: 15px;
+}
+.Card__status {
+    color: rgb(0, 0,  0, 0.6);
+}
+.Card__title, .Card__per-month, .Card__paragraph, .Card__button, .Card__status {
+    text-align: center;
+}
+.Card__paragraph {
+    font-size: large;
+}
+.Card__button {
+    border-radius: 3px;
+    border: 1px solid #1976d2;
+    color: #1976d2;
+    width: 100%;
+    font-weight: 600;
+}
+.TextButton {
+    background-color: #1976d2;
+    color: #fff;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 1px solid #1976d2;
+}
+.Card__form {
+    padding: 7px;
+}

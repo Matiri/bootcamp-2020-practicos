@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="fechaDeHoyDate"></h1>
+    <h2 id="fechaDeHoyMoment"></h2>
+
+
+    <script src="moment.js"></script>
+
+    <script>
+        //ej1 Mostrar la fecha de hoy con el siguiente formato 2020-7-9
+
+        //Date js
+        var fechaConDate = new Date ();
+        var dia = fechaConDate.getDate ();
+        var mes = fechaConDate.getMonth () +1;
+        var año =fechaConDate.getFullYear ();
+        var mostrar = document.getElementById ("fechaDeHoyDate");
+        mostrar.innerHTML = "Fecha con date: "+ año + '-' + mes + '-' + dia;
+
+
+        //Moment js
+        var fechaConMoment= moment().format('YYYY-M-D');
+        var mostrar2 = document.getElementById ("fechaDeHoyMoment");
+        mostrar2.innerHTML = "Fecha con Moment: " + fechaConMoment;
+
+
+        //ej2 
+
+        //Date js
+        
+        var dia= prompt("Ingrese un dia");
+        var mes = prompt("Ingrese un mes");
+        var año = prompt("Ingrese un año");
+
+        if(mes > 12){
+            alert("inserte una fecha valida");
+        }
+
+        switch(mes){
+            case "1":
+            case "3":
+            case "5":
+            case "7":
+            case "8":
+            case "10":
+            case "12":
+                if(dia <= 31){
+                    alert("Es valida");
+                }else{
+                    alert("inserte una fecha valida");
+                }
+            break;
+            case "4":
+            case "6":
+            case "9":
+            case "11":
+                if(dia <= 30){
+                    alert("Es valida");
+                }else{
+                    alert("inserte una fecha valida");
+                }
+            break;
+            case "2":
+                if(dia <= 28){
+                    alert("Es valida");
+                }else{
+                    alert("inserte una fecha valida");
+                }
+            break;
+            default:
+                alert("inserte una fecha valida");
+        }
+
+        //Moment js
+        /*function fechaValida(){
+            var fecha= prompt("ingrese una fecha");
+            if(fecha==moment().format('l')){
+                alert("la fecha es valida");
+            }else{
+                alert("la fecha no es valida");
+            }
+        }
+        fechaValida();*/
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

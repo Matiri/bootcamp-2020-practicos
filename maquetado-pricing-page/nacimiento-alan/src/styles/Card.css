@@ -1,0 +1,12 @@
+#Card {
+    width: 18rem;
+}
+
+#tamañoTitulo {
+    height: 6em;
+}
+
+#btnColor {
+    color: #fff;
+    background-color: #007bff;
+}

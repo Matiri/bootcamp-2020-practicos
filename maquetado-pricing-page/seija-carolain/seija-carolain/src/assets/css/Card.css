@@ -1,0 +1,120 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.Cards {
+    width: 280px;
+    height: 355px;
+    background-color: #fff;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.43;
+    box-shadow: 0px 1px rgba(155, 150, 150, 0.541);
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: rgba(220, 220, 220, 0.212);
+    border-style: ridge; 
+}
+.CardDifferent {
+    width: 290px;
+    height: 370px;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.43;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-shadow: 0px 1px rgba(155, 150, 150, 0.541);
+    box-sizing: border-box;
+    border: rgba(220, 220, 220, 0.212);
+    border-style: ridge; 
+    margin-top: -20px;
+    text-align: center;
+}
+.TitleCard {
+    height: 70px; 
+    background-color: #eeeeee;;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+
+.TitleCarddif {
+    height: 90px; 
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #eeeeee;;
+    font-size: 15px;  
+}
+.TitleCard-Text {
+    padding-top: 10px; 
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-top: -18px;
+}
+
+.divicon {
+    padding-left: 250px;
+}
+
+.Price-number {
+    font-size: 50px; 
+}
+.Price {
+    font-size: 20px;
+    text-align: center;
+}
+.DescriptionCard {
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-font-smoothing: antialiased;
+    list-style-type: none; 
+    font-size: 17px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    box-sizing: inherit;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.TextButton {
+    border-radius: 3px;
+    background-color: white;
+    color: rgba(0, 162, 255, 0.753);
+    padding: 10px 85px;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 12px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    padding: 5px 15px;
+    border: 1px solid rgba(25, 118, 210, 0.5);
+    width: 100%;  
+}
+.TextButtonDos {
+    background-color: rgba(23, 148, 231, 0.76);
+    color: white;
+    font-size: 12px;   
+    font-weight: 900;
+    padding: 10px 85px;
+    border: 1px solid rgba(0, 162, 255, 0.753);
+    border-radius: 3px;
+    margin-top: 8px;
+}
+.ContentParraph {
+    color: rgb(116, 116, 116);
+}
+
+button:hover {
+    background: rgba(220, 220, 220, 0.349);
+}
+.TextButtonDos:hover {
+    background: rgba(0, 28, 151, 0.856);
+}
+
+a.CardList-Link:hover {
+    color: gray;
+  }
+ 

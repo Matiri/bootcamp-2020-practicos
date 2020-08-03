@@ -1,0 +1,21 @@
+.Title {
+    font-size: 65px;
+    font-weight:320;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.Description-container {
+    color: rgba(119, 117, 117, 0.829);
+    text-align: center;
+    width: 100%;
+    height: 140px;
+    font-size: 22px;
+    margin-bottom: 70px;
+    padding: 10px;
+    
+    
+}
+.Descriptions {
+    text-align: center;
+}

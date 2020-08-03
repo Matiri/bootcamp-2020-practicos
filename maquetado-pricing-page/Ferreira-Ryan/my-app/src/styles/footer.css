@@ -1,0 +1,41 @@
+.main {
+    position: relative;
+    bottom: 0px;
+    color:white;
+    background-color: rgb(12, 11, 12);
+    padding-top: 30px;
+}
+p {
+    margin:0px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+a {
+    margin: 0px;
+    text-decoration: none;
+    color: #7e7d7e;
+}
+
+.main-contain {
+    display: flex;
+    justify-content: space-around;
+    padding:1.2rem 7.7rem;
+}
+
+.list-title {
+    font-size: larger;
+}
+.copyright {
+    text-align: center;
+    color: #7e7d7e;
+    padding: 12px 0px;
+}
+#hr {
+    width: 85%;
+    margin: 0px auto;
+    height: 1px;
+    background-color: rgb(109, 107, 107);
+    border: none;;
+}

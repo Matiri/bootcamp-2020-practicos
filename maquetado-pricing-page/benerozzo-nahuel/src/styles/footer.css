@@ -1,0 +1,38 @@
+.footerBg{
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.inlineBlock{
+    display: inline-block;
+}
+.listLink{
+text-decoration: none;
+color: black;
+}
+.listLink:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.decLinkNone{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.decLinkNone:hover{
+color: black;
+cursor: pointer;
+
+}
+.copyDec{
+opacity: 0.5;
+}
+.positCopyText{
+    
+    position: relative;
+    text-align: center;
+top: 200px;
+
+}

@@ -1,0 +1,28 @@
+.FooterPag {
+    height: 200px;
+    
+color: rgba(0, 0, 0, 0.87);
+
+
+padding-left: 24px;
+padding-right: 24px;
+border-top: 1px solid rgba(0, 0, 0, 0.12);
+margin-top: 64px;
+padding-top: 48px;
+
+}
+.CopyrightText {
+   height: 80px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.486);
+    margin-bottom: 0px;
+
+}
+.CopyrigthLink {
+    color: rgba(0, 0, 0, 0.486);
+    text-decoration: none;
+
+}
+a.CopyrigthLink:hover {
+    color: gray;
+  }

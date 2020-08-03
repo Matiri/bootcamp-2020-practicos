@@ -1,0 +1,18 @@
+.inlineBlock{
+    display: inline-block;
+}
+.positionCard{
+    position: relative;
+    top: 50%;
+}
+.positionNavBar{
+    position: relative;
+}
+.positionMainTitle{
+    padding: 64px 0px 48px;
+}
+.positionFooter{
+    margin-top: 64px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}

@@ -1,0 +1,18 @@
+.CardList__first-div{
+    padding-top:  150px;
+    margin: auto;
+}
+.CardList__title {
+    color: #000;
+}
+.CardList__li-elements {
+    color: #808080;
+    font-weight: 200;
+    font-size: 18px;
+}
+.CardList__li-elements:hover {
+    color: #808080;
+}
+.CardList__copyright {
+    color: #808080;
+}

@@ -1,0 +1,29 @@
+.container-title{
+    width: 110%;
+    max-width: 110%;
+    margin-left: -60px;
+    
+}
+
+.Title{
+    font-size: 3.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 40;
+    line-height: 1.2;
+    text-align: center;
+    color:rgb(19, 18, 18);
+    margin-bottom: 0.35em;
+    
+
+}
+
+.Discription{
+    font-size: 22px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    color:rgba(41, 39, 39, 0.54);
+    margin-left: 380px;
+    margin-right: 380px;
+}

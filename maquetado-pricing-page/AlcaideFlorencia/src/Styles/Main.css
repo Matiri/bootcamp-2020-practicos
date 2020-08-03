@@ -1,0 +1,13 @@
+.container-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}

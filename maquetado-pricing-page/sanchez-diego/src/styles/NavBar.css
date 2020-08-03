@@ -1,0 +1,62 @@
+.navBar__box {
+    background-color: #bdb4b421;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 10px;
+    width: 100%;
+    height: 66px;
+    position: relative;
+    display: flex;
+}
+
+
+.navBar__nameLogo {
+    width: 100%;
+    color: black;
+    vertical-align: inherit;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 20px;
+    position: absolute;
+    flex-grow: 1;
+}
+.navBar__links {
+    display: inline-block;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 20px;
+    position: absolute;
+    margin-left: 60%;
+}
+.navBar__links{
+    float: right;
+}
+.navBar-link {
+    font-size: 13px;
+    font-family: bold;
+    color: black;
+    padding: 20px;
+    text-decoration: none; 
+}
+.navBar__link {
+    padding: 10px;
+}
+.navBar__button {
+    color: rgba(32, 119, 218, 0.87);
+    background: #bdb4b421;
+    border: 1px solid rgba(32, 119, 218, 0.87);
+    border-radius: 5px;
+    margin: 8px 12px;
+    padding: 5px 15px;  
+    text-decoration: none;
+}
+.navBar__link:link{
+    color: black;
+}
+.navBar__link:visited{
+    color: black;
+}

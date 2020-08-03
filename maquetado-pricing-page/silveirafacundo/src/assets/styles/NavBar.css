@@ -1,0 +1,47 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 600;
+    font-size: 20px;
+}
+.NavBar__first-element, .NavBar__last-elements, .NavBar__button, .NavBar__last-elements-div {
+    display: inline;
+}
+.NavBar__li-elements, .NavBar__first-element {
+    padding: 20px 10px;
+}
+.NavBar__li-elements, .NavBar__first-element {
+    float: left;
+}
+.main__NavBar-div {
+    height: 60px;
+    background-color: rgb(255, 243, 230, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.NavBar__first-element {
+    padding: 15px 15px;
+}
+.NavBar__last-elements {
+    font-size: 15px;
+    color: #000;
+}
+.NavBar__last-elements:hover {
+    color: #000;
+}
+.NavBar__form {
+    padding: 1px;
+}
+.NavBar__button {
+    border-radius: 5px;
+    border: 1px solid #1976d2;
+    color: #1976d2;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px 15px;
+}
+.NavBar__last-elements-div {
+    float: right;
+}

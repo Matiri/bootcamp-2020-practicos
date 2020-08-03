@@ -1,0 +1,15 @@
+#contain {
+    padding-top: 64px;
+    padding-bottom: 48px;
+}
+
+#titulo {
+    font-size: 3.75rem;
+    font-weight: 300;
+    margin-bottom: 0.35em;
+}
+
+#content {
+    color: grey;
+    font-size: 1.5rem;
+}

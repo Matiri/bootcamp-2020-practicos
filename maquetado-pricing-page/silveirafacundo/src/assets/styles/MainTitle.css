@@ -1,0 +1,15 @@
+.main__MainTitle {
+    width: 730px;
+    margin: auto;
+    padding: 50px;
+}
+.main__home-title {
+    text-align: center;
+    font-weight: 100;
+    font-size: 62px;
+}
+.main__home-description {
+    color: rgb(0, 0, 0, 0.6);
+    text-align: center;
+    font-size: 25px;
+}

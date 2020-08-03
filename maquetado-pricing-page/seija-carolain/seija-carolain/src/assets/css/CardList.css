@@ -1,0 +1,28 @@
+.CardListFooter {
+    width: 200px;
+    height: 190px;
+    font-size: 0.999rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    display: inline-block;
+
+}
+.List {
+    list-style-type: none;
+}
+
+.CardList-Title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.CardList-Link {
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.486);
+    line-height: 1.8;
+    
+    
+}

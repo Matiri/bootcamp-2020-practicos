@@ -1,0 +1,13 @@
+.cardList__box{
+    list-style: none;
+    padding: 0 50px;
+}
+.cardList__link{
+    color: gray;
+}
+.cardList__link:link{
+    color: gray;
+}
+.cardList__link:visited{
+    color: gray;
+}

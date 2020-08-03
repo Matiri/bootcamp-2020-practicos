@@ -1,0 +1,27 @@
+.cardListDiv{
+    display: block;
+    position: absolute;
+    top: 0;
+    padding:16px;
+}
+.cardListTitle{
+    margin-bottom: 0.35em;
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+.cardListUl{
+
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0.5;
+}

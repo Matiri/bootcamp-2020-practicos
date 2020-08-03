@@ -1,0 +1,17 @@
+#card {
+    width: 18rem;
+}
+
+#card-great-title{
+    background-color: #eeeeee;
+    height: 6,5em;
+}
+
+#card-title {
+    background-color: #eeeeee;
+}
+
+#button{
+    color: #fff;
+    background-color: #007bff;
+}

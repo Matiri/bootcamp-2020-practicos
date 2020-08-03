@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/nahuel-benerozzo/js/moment.js"></script>
+</head>
+<body>
+    <h1 id="mensaje"></h1>
+    <h1 id="mensajeDos"></h1>
+
+</body>
+<script>
+
+    
+// //ejercicio 1
+//java sin moment
+var time = new Date();
+
+var año = time.getFullYear(),
+    mes = time.getMonth(),
+    dia = time.getDate();
+var mostrar = document.getElementById("mensaje");
+mensaje.innerHTML = año + "-" + mes + "-" + dia ; 
+// // //con moment
+var fecha = moment().format('YYYY MMMM dddd');
+mensajeDos.innerHTML = fecha ;
+
+//jercicio2
+//java sin moment
+
+// var diaU = document.write(prompt("Ingrese un dia"));
+// var mesU = document.write(prompt("Ingrese un mes"));
+// var añoU = document.write(prompt("Ingrese un año"));
+
+// if(mesU > 12){
+//     alert("Recargue la pagina e inserte una fecha valida");
+// }
+
+// switch(mesU){
+//     case "1":
+//     case "3":
+//     case "5":
+//     case "7":
+//     case "8":
+//     case "10":
+//     case "12":
+//         if(diaU <= 31){
+//             alert("Es valida");
+//         }else{
+//             alert("Recargue la pagina e inserte una fecha valida");
+//         }
+//     break;
+//     case "4":
+//     case "6":
+//     case "9":
+//     case "11":
+//         if(diaU <= 30){
+//             alert("Es valida");
+//         }else{
+//             alert("Recargue la pagina e inserte una fecha valida");
+//         }
+//     break;
+//     case "2":
+//         if(diaU <= 28){
+//             alert("Es valida");
+//         }else{
+//             alert("Recargue la pagina e inserte una fecha valida");
+//         }
+//     break;
+//     default:
+//         alert("Recargue la pagina e inserte una fecha valida");
+// }
+//otra solucion
+// function validarFechaJs(day,month,year){
+//     var dteDate;
+//     month=month-1;
+//     dteDate=new Date(year,month,day);
+//     if ((day==dteDate.getDate()) && (month==dteDate.getMonth()) && (year==dteDate.getFullYear())){
+//         return alert("fecha correcta");
+//     } else if (day > 28 && month == 2) {
+//         return alert("fecha incorrecta");
+//     }
+//     return alert("fecha incorrecta");
+// }
+</script>
+<script src="/nahuel-benerozzo/js/funciones.js"></script>
+</html>

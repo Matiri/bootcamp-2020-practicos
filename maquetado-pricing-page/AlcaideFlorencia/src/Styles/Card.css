@@ -1,0 +1,75 @@
+.container-principal-card{
+    width: 250px;
+    height: 300px;
+    margin:20px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    display: inline-block;
+    font-size: 15px;
+
+}
+
+
+.containerFree{
+    border:1px solid #eeeeee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-decoration:none;
+    text-align: center;
+    border-bottom-style: groove;
+    margin-top: -17px;
+}
+
+.container_title{
+    width:250px;
+    height: 40px;
+    text-align:center;
+    background-color: #eeeeee;
+    margin-top:0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: normal;
+    
+}
+
+    
+
+.price-number{
+    font-size:2.9rem;
+    font-weight: 400;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.text-diference{
+    font-size:1.25rem ;
+    color:rgba(20, 20, 20, 0.54);
+    font-weight: bold;
+}
+
+.container-li{
+    list-style:none;
+    margin-bottom: 20px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+button{
+    width: 235px;
+    height: 35px;
+    border:1px solid rgba(25, 118, 210, 0.5);
+    background-color: white;
+    border-radius: 5px;
+    color:#1976d2 ;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+

@@ -1,0 +1,19 @@
+.footer__box{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    border-top: 1px solid rgba(199, 197, 197, 0.87);
+}
+.footer__copyright{
+    color: grey;
+    text-align: center;
+    margin: 20px;
+}
+.footer__copyright-link{
+    color: grey;
+}
+.footer__copyright-link:hover{
+    color: grey; 
+}

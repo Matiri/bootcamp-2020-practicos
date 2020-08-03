@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="fecha"></h1>
+
+<script type="text/javaScript" src="C:\Users\user\Desktop\bootcamp-2020-practicos\nahuel-benerozzo\js-nahuel\moment.js"></script>
+<script>
+
+
+
+function fechaYHora(){
+
+var fecha = moment().format('MMMM Do YYYY, h:mm:ss a')
+var mostrarDia = document.getElementById("fecha");
+mostrarDia.innerHTML = fecha;
+
+};
+var intervalo = setInterval(fechaYHora, 1000);
+
+</script>
+
+
+</body>
+</html>

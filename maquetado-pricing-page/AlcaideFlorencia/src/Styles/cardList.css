@@ -1,0 +1,40 @@
+.content{
+    list-style: none;
+    width: 230px;
+    display: inline-table;
+    border-top: 1px solid rgb(228, 223, 223);
+}
+.List{
+    margin-top: 55px;
+}
+
+
+.title{
+    color: black;
+}
+
+li {
+    list-style: none;
+    line-height: 15px;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(104, 103, 103);
+    font-size: 14px;
+    
+}
+
+.title{
+    font-size: 20px;
+    margin-top: 0px;
+}
+.copyright{
+    font-size: 13px;
+    text-align: center;
+    margin:40px 0px 40px 0px;
+}
+.copyright a{
+    font-size: 13px;
+}
+

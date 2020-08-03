@@ -1,0 +1,202 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+body{
+    background-color: #121212;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header Style */
+
+.navBar_header{
+    background-color: #212121;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 64px;
+}
+.navBar_mainText{
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+}
+.navBar_links{
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+.btn_login{
+    color: #90caf9;
+    border: 1px solid rgba(144, 202, 249, 0.5);
+    background-color: transparent;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+}
+
+.btn_login:hover{
+    color: #90caf9;
+    border: 1px solid rgba(144, 202, 249, 1.0);
+    background-color: rgba(144, 202, 249, 0.2);
+}
+
+/* mainTitle Styles */
+
+.pricing-div{
+width: 100%;
+max-width: 600px;
+}
+
+.pricing-h1{
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+}
+
+.main_parraf{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    text-align: center;   
+}
+
+/* Cards Styles */
+
+.main_Cards{
+    max-width: 960px;
+    width: 100%;
+}
+
+.card{
+    border: 0px;
+}
+
+.card-header{
+    background-color: #616161;
+}
+
+.mainText_card{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.pricing-card-title{
+    color: white;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.text-muted{
+    color: white;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.card-body{
+    background-color: #424242; 
+}
+
+.cards_parraf{
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+    color: white;
+}
+
+.firstButton_cards{
+    width: 100%;
+    color: #90caf9;
+    border: 1px solid rgba(144, 202, 249, 0.5);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+}
+
+.firstButton_cards:hover{
+    color: #90caf9;
+    border: 1px solid rgba(144, 202, 249, 1.0);
+    background-color: rgba(144, 202, 249, 0.2);
+}
+.secondButton_cards{
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #90caf9;
+    border: 0px;
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+}
+.secondButton_cards:hover{
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #90caf9;
+    border: 0px;
+    background-color: rgb(100, 141, 174);
+}
+
+/* Footer Styles */
+
+.footerMain{
+    width: 100%;
+    max-width: 960px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainList_footer{
+    width: 100%;
+    max-width: 960px;
+
+}
+
+.title_footer{
+color: white;
+}
+
+.textList_footer{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+}
+
+.textList_footer:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.Copyright_footer{
+    text-align: center;
+    color: white;
+}
+.Copyright_footer:hover{
+    color: white;
+}

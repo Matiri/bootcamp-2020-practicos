@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+}
+.NavBar {
+    background-color: #bdb4b421;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 10px;
+    width: 100%;
+    height: 66px;
+    position: relative;  
+}
+
+.NameLogo {
+    width: 100%;
+    color: black;
+    vertical-align: inherit;
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 20px;
+    position: absolute;
+    z-index: -2; 
+}
+.NavBar-Links {
+    width: 400px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-left: 940px; 
+}
+.NavBar-Link {
+    font-size: 13px;
+    font-family: bold;
+    color: black;
+    margin: 8px 12px;
+    direction: rtl;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.NavBar-Link-Login {
+    color: #1976d2;
+    border: 1px solid rgba(25, 118, 210, 0.5);
+    margin: 8px 12px;
+    padding: 5px 15px;  
+    text-decoration: none;
+}
+
+a.NavBar-Link:hover {
+    color: black
+  }
