@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 
+const numberList = ["Uno", "Dos", "Dos"];
+
 // Forma de hacerlo con class
 class AppConClass extends React.Component {
   constructor(props) {
@@ -34,12 +36,19 @@ class AppConClass extends React.Component {
         >
           Parar reloj
         </button>
+        <ul>
+          {numberList.map((element, idx) => {
+            return (
+              <li key={`${element}-${idx}`}>
+                <p>{element}</p>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     );
   }
 }
-
-const numberList = ["Uno", "Dos", "Dos"];
 
 // Forma de hacerlo con arrow functions =>
 const App = (props) => {
@@ -49,19 +58,21 @@ const App = (props) => {
   const [list, setList] = React.useState(numberList);
   let timerID;
 
-  // Cuando se monta el componente
-  React.useEffect(() => {
+  const funcionComponentDidMount = () => {
     console.log("Se ejecuta la actualizacion");
     timerID = setInterval(() => {
       setDate(new Date());
-    }, 100000);
+    }, 1000);
 
     // Se ejecuta cuando se desmonta o muere el componente
     const clear = () => {
       clearInterval(timerID);
     };
     return clear;
-  }, []);
+  };
+
+  // Cuando se monta el componente
+  React.useEffect(funcionComponentDidMount, []);
 
   const handleStopClock = () => {
     clearInterval(timerID);
