@@ -1,41 +1,17 @@
 const express = require('express');
+const manager = require('./manager');
 var server = express();
 server.use(express.json());
-
-const canciones = [{
-  "name": "name",
-  "artist": "artist",
-  "duration": "duration",
-}];
+server.listen(3000);
 
 server.route('/')
-  .get(function(req, res){
-    res.send(canciones);
-  })
+  .get(manager.listarCanciones)
 
-  .post(function(req, res){
-    var song = req.body;
-    canciones.push(song);
-    res.status(201);
-    res.send(canciones);
-  })
+  .post(manager.agregarCancion)
 
-server.route('/name/:name')
-  .get(function(req, res){
-    var nombre = req.params;
-    res.send(nombre);
-  })
+server.route('/:name')
+  .get(manager.obtenerCancionPorNombre)
 
-  .delete(function(req, res){
-    var nombre = req.params;
-    canciones.forEach(element => {
-      if(element.name == nombre){
-        var index = canciones.indexOf(element);
-        canciones.splice(index, 1);
-      }
-      res.send(canciones);
-    })
-    
-  })
+  .put(manager.modificarCancion)
 
-server.listen(3000);
+  .delete(manager.eliminarCancion)
