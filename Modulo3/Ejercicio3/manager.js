@@ -30,26 +30,43 @@ const agregarCancion = (req, res) => {
 }
 
 const obtenerCancionPorNombre = (req, res) => {
-    var nombre = req.params.element;
+    var nombre = req.params.name;
 
     const resultado = canciones.filter((element) => {
         if (element.name === nombre) {
+            console.log(element.name);
             return true;
-        } else {
-            return false;
         }
+            return false;
     })
-
     res.send(resultado);
 }
 
 const modificarCancion = (req, res) => {
-
+    const cancion = req.body;
+    if(validarCancion(cancion) == true){
+        const filtro = (element) => {
+            if(element.name !== cancion.name){
+                // false: no se agrega, true: sí se agrega
+                return false;
+            } else {
+                return(
+                    element.name = cancion.name,
+                    element.artist = cancion.artist,
+                    element.duration = cancion.duration
+                )
+            }
+        }
+        let resultado = canciones.filter(filtro)
+        res.send(resultado);
+    } else {
+        res.status(400).send("El formato de la canción es incorrecto!");
+    }
 }
 
 const eliminarCancion = (req, res) => {
-    var nombre = req.params.canciones;
-    const resultado = function(element) {
+    var nombre = req.params.name;
+    const resultado = (element) => {
       if(element.name !== nombre){
         return true;
       } else {
