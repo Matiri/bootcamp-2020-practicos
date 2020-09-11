@@ -7,3 +7,5 @@ server.listen(3000);
 
 server.route('./')
     .get(manager.listarCanciones)
+
+    .post(manager.agregarCancion)
