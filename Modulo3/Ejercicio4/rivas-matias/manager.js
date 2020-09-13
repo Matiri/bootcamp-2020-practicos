@@ -1,13 +1,15 @@
-const mongoose = require("mongoose");
-const { MongoClient } = require("mongodb");
-const Schema = mongoose.Schema;
+var mongoose = require("mongoose");
+var Schema = mongoose.Schema;
 
 // conexion
-mongoose.connect("mongodb+srv://MatiasRivas:okayibelieveyou@prueba-db.jozch.gcp.mongodb.net/canciones?retryWrites=true&w=majority", {useNewUrlParser: true});
-mongoose.set("useUnifiedTopology", true);
+mongoose.connect("mongodb+srv://MatiasRivas:okayibelieveyou@prueba-db.jozch.gcp.mongodb.net/canciones?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false});
 
 // schema
-const schema = new Schema({
+var schema = new Schema({
     name: {type: String, required: true},
     album: String,
     duration: String,
@@ -19,8 +21,8 @@ const schema = new Schema({
 })
 
 //modelo
-const cancion = mongoose.model("cancion", schema);
-var nuevaCancion = new cancion({
+var canciones = mongoose.model("canciones", schema);
+var nuevaCancion = new canciones({
     name: "Killer Queen",
     album: "Killer Queen",
     duration: "3:03",
@@ -32,11 +34,9 @@ var nuevaCancion = new cancion({
 })
 
 const listarCanciones = (req, res) => {
-    if(cancion.length > 0){
-        cancion.find()
-            .then(function(doc){
-                res.send(doc);
-            })
+    if(canciones.length > 0){
+        canciones.find()
+            .then(res.send(canciones))
     } else {
         res.status(404).send("No se encontraro canciones!");
     }
