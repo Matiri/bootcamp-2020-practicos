@@ -5,7 +5,14 @@ server.use(express.json());
 server.listen(3000);
 
 
-server.route('./')
+server.route('/')
     .get(manager.listarCanciones)
 
     .post(manager.agregarCancion)
+
+server.route('/:name')
+    .get(manager.obtenerCancionPorNombre)
+
+    .put(manager.modificarCancion)
+
+    .delete(manager.eliminarCancion) 
