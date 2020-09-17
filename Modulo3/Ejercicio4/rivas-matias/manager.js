@@ -6,6 +6,7 @@ var Schema = mongoose.Schema;
 mongoose.connect("mongodb+srv://MatiasRivas:okayibelieveyou@prueba-db.jozch.gcp.mongodb.net/canciones?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useFindAndModify: false
 });
 
 // schema
@@ -76,30 +77,6 @@ const modificarCancion = async(req, res) => {
             res.send(data);
         }
     })
-    /*
-    var songs = await canciones.find({});
-    if(validarCancion(cancion) == true){
-        const filtro = async(element) => {
-            if(element.name !== cancion.name){
-                // false: no se agrega, true: sí se agrega
-                return false;
-            } else {
-                const newName = cancion.name;
-                const newAlbum = cancion.album;
-                let doc = await canciones.findOneAndUpdate(newName, newAlbum,{
-                    new: true
-                });
-                return(
-                    doc.name,
-                    doc.age
-                )
-            }
-        }
-        let resultado = songs.filter(filtro)
-        res.send(resultado);
-    } else {
-        res.status(400).send("El formato de la canción es incorrecto!");
-    }*/
 }
 
 const eliminarCancion = (req, res) => {
