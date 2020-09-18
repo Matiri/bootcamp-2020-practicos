@@ -1,5 +1,5 @@
 const importModel = require('../model/songsModel');
-var songs = importModel.songsModel;
+var songs = importModel.songs;
 
 const validateSong = (song) => {
     if(song.name && song.album){

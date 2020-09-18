@@ -15,6 +15,6 @@ mongoose.connect("mongodb+srv://MatiasRivas:okayibelieveyou@prueba-db.jozch.gcp.
 });
 
 //modelo
-var songsModel = mongoose.model("canciones", schema, "canciones");
+var songs = mongoose.model("canciones", schema, "canciones");
 
-module.exports = {songsModel}
+module.exports = {songs}
