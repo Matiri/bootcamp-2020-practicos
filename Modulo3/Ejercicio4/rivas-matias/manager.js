@@ -69,7 +69,7 @@ const obtenerCancionPorNombre = async(req, res) => {
 const modificarCancion = async(req, res) => {
     var nombre = req.params.name;
     const cancion = req.body;
-    canciones.findOneAndUpdate(nombre, cancion, (error, data) => {
+    canciones.findOneAndUpdate({name: nombre}, {name: cancion.name, album: cancion.album}, (error, data) => {
         if(error){
             res.send('error');
         } else {
