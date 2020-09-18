@@ -1,4 +1,3 @@
-const { error } = require("console");
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 

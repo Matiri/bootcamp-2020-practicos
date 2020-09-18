@@ -1,18 +1,18 @@
-const express = require("express");
-const manager = require('../controller/songsController');
+const express = require("../node_modules/express");
+const songsController = require('../controller/songsController');
 var server = express();
 server.use(express.json());
 server.listen(3000);
 
 
 server.route('/')
-    .get(manager.listarCanciones)
+    .get(songsController.listSongs)
 
-    .post(manager.agregarCancion)
+    .post(songsController.addSong)
 
 server.route('/:name')
-    .get(manager.obtenerCancionPorNombre)
+    .get(songsController.getSongByName)
 
-    .put(manager.modificarCancion)
+    .put(songsController.modifySong)
 
-    .delete(manager.eliminarCancion) 
+    .delete(songsController.eliminateSong) 

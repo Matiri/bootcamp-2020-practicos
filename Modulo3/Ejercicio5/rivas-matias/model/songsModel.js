@@ -1,4 +1,4 @@
-var mongoose = require("mongoose");
+var mongoose = require("../node_modules/mongoose");
 var Schema = mongoose.Schema;
 
 // schema
@@ -15,6 +15,6 @@ mongoose.connect("mongodb+srv://MatiasRivas:okayibelieveyou@prueba-db.jozch.gcp.
 });
 
 //modelo
-var canciones = mongoose.model("canciones", schema, "canciones");
+var songsModel = mongoose.model("canciones", schema, "canciones");
 
-module.exports = canciones;
+module.exports = {songsModel}

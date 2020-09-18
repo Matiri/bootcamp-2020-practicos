@@ -1,25 +1,26 @@
-const { error } = require("console");
+const importModel = require('../model/songsModel');
+var songs = importModel.songsModel;
 
-const validarCancion = (cancion) => {
-    if(cancion.name && cancion.album){
+const validateSong = (song) => {
+    if(song.name && song.album){
         return true;
     }
     return false;
 }
 
-const listarCanciones = async(req, res) => {
-    var songs = await canciones.find({})
-    if(songs.length > 0){
-        res.send(songs)
+const listSongs = async(req, res) => {
+    var getSongs = await songs.find({})
+    if(getSongs.length > 0){
+        res.send(getSongs)
     } else {
-        res.status(404).send("No se encontraro canciones!");
+        res.status(404).send("No se encontraron canciones!");
     }
 }
 
-const agregarCancion = (req, res) => {
-    const newSong = new canciones(req.body);
+const addSong = (req, res) => {
+    const newSong = new songs(req.body);
 
-    if(validarCancion(newSong) == true){
+    if(validateSong(newSong) == true){
         newSong.save(function(err){
             if(err){
                 res.status(400).send("El formato de la canción es incorrecto")
@@ -31,10 +32,10 @@ const agregarCancion = (req, res) => {
     }
 }
 
-const obtenerCancionPorNombre = async(req, res) => {
+const getSongByName = async(req, res) => {
     var nombre = req.params.name;
-    var songs = await canciones.find({});
-    const resultado = songs.filter((element) => {
+    var getSongs = await songs.find({});
+    const resultado = getSongs.filter((element) => {
         if (element.name === nombre) {
             return true;
         }
@@ -43,10 +44,17 @@ const obtenerCancionPorNombre = async(req, res) => {
     res.send(resultado);
 }
 
-const modificarCancion = async(req, res) => {
-    var nombre = req.params.name;
-    const cancion = req.body;
-    canciones.findOneAndUpdate(nombre, cancion, (error, data) => {
+/* 
+ahora sé que debería usar .save la mayoría de las veces, 
+pero decidí probar findOneAndUpdate solo para probar
+y ahora me puse a hacerlo bien por una hora y media
+solo para tener un ejemplo bien hecho
+*/
+
+const modifySong = (req, res) => {
+    var name = req.params.name;
+    var newSong = req.body;
+    songs.findOneAndUpdate({name: name}, {name: newSong.name, album: newSong.album}, {new: true}, (error, data) => {
         if(error){
             res.send('error');
         } else {
@@ -55,9 +63,9 @@ const modificarCancion = async(req, res) => {
     })
 }
 
-const eliminarCancion = (req, res) => {
-    var nombre = req.params.name;
-    canciones.findOneAndDelete(nombre, (error, deletedRecord) => {
+const eliminateSong = (req, res) => {
+    var name = req.params.name;
+    songs.findOneAndDelete(name, (error, deletedRecord) => {
         if(!error){
             console.log(deletedRecord);
             res.send(deletedRecord);
@@ -66,9 +74,9 @@ const eliminarCancion = (req, res) => {
 }
 
 module.exports = {
-    listarCanciones,
-    agregarCancion,
-    obtenerCancionPorNombre,
-    modificarCancion,
-    eliminarCancion
+    listSongs,
+    addSong,
+    getSongByName,
+    modifySong,
+    eliminateSong
 }
